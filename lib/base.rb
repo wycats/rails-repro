@@ -11,6 +11,6 @@ class Object
 
   def self.const_missing(klass)
     require underscore(klass.to_s)
-    const_get(klass)
+    const_get("#{klass}")
   end
 end
