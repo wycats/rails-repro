@@ -1,0 +1,2 @@
+class First < Super
+end
