@@ -1,4 +1,4 @@
 class FirstObserver
   klass = name.gsub(/Observer$/, '')
-  eval("::#{klass}")
+  eval("::#{klass}").hookz = self
 end
